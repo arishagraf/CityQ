@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CityQ</string>
+    <string name="_0_cities_placed">0 cities placed</string>
+    <string name="_1500_kilometers_left">1500 kilometers left</string>
+    <string name="select_the_location_of_zurich">Select the location of</string>
+    <string name="place">place</string>
+    <string name="use_this_location">Use this location?</string>
+    <string name="select">Select</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#1f1e1e"
+    tools:context=".MapActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:text="@string/_0_cities_placed"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/cities_found"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:text="@string/_1500_kilometers_left"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/km_location"
+        android:layout_below="@id/cities_found"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_location_of_zurich"
+        android:layout_below="@id/km_location"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/select_tv"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_tv"
+        android:id="@+id/city_find"
+        android:layout_centerHorizontal="true"
+        android:text="Zürich"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/map"
+        android:layout_below="@id/city_find"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/place_flag"
+        android:layout_marginBottom="30dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/place"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:id="@+id/place_flag"/>
+
+
+
+</RelativeLayout>

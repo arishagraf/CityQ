@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/use_this_location"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/use_this_location"
+        android:id="@+id/myAddress"/>
+    <fragment
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:id="@+id/mapp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/select"
+            android:background="#1f1e1e"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/Select"/>
+
+    </LinearLayout>
+
+</LinearLayout>
